@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dbc5f1d8_3c74749c",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1015262
+      },
+      "writtenOn": "2018-10-14T16:27:27Z",
+      "side": 1,
+      "message": "Co o tym myslisz?",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 107
+      },
+      "revId": "82d63157ffa5c2d9d7cb57611f6f702ee2b630f2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
