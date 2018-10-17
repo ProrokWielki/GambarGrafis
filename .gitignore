@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Tex files
+*.synctex.gz
+*.aux
