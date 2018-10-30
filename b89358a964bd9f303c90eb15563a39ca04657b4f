@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "83b25103_d39bb63b",
+        "filename": ".gitignore",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1015265
+      },
+      "writtenOn": "2018-10-30T23:07:38Z",
+      "side": 1,
+      "message": "Whole words should be used in comments.",
+      "range": {
+        "startLine": 34,
+        "startChar": 6,
+        "endLine": 34,
+        "endChar": 9
+      },
+      "revId": "b89358a964bd9f303c90eb15563a39ca04657b4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c89ee4cd_3c7c41ab",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1015265
+      },
+      "writtenOn": "2018-10-30T23:07:38Z",
+      "side": 1,
+      "message": "There is misspelled (a typo) in commit message.",
+      "range": {
+        "startLine": 7,
+        "startChar": 39,
+        "endLine": 7,
+        "endChar": 40
+      },
+      "revId": "b89358a964bd9f303c90eb15563a39ca04657b4f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
