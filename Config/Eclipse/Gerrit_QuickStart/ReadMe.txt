@@ -1,0 +1,1 @@
+You have to have TexLipse plugin for the Eclipse for this configuration to work properly
