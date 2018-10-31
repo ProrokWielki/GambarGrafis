@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ed9a9577_302b0921",
+        "filename": "Resources/Documents/Gerrit_QuickStart/src/gerrit.tex",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1015265
+      },
+      "writtenOn": "2018-10-31T08:32:56Z",
+      "side": 1,
+      "message": "GerritHub is used. No-personal form.",
+      "range": {
+        "startLine": 33,
+        "startChar": 17,
+        "endLine": 33,
+        "endChar": 33
+      },
+      "revId": "c1f318eef0be4979e159899126b0684dd17b48a9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "de0f2df0_7b08c5f0",
+        "filename": "Resources/Documents/Gerrit_QuickStart/src/gerrit.tex",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1015265
+      },
+      "writtenOn": "2018-10-31T08:32:56Z",
+      "side": 1,
+      "message": "space before round bracket.",
+      "range": {
+        "startLine": 39,
+        "startChar": 187,
+        "endLine": 39,
+        "endChar": 188
+      },
+      "revId": "c1f318eef0be4979e159899126b0684dd17b48a9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
