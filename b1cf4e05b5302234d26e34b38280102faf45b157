@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b6e6f4a5_663d61e5",
+        "filename": "Resources/Documents/Gerrit_QuickStart/src/gerrit.tex",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1015265
+      },
+      "writtenOn": "2018-11-01T08:04:31Z",
+      "side": 1,
+      "message": "missed space symbol",
+      "range": {
+        "startLine": 33,
+        "startChar": 19,
+        "endLine": 33,
+        "endChar": 21
+      },
+      "revId": "b1cf4e05b5302234d26e34b38280102faf45b157",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
