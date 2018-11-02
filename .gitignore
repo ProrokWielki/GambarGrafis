@@ -31,6 +31,6 @@
 *.out
 *.app
 
-# Tex temporary files 
+# Tex temporary files
 *.synctex.gz
 *.aux
