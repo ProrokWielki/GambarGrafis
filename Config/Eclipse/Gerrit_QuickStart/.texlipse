@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Wed Oct 17 19:04:40 CEST 2018
+markTmpDer=true
+builderNum=2
+outputDir=Gerrit_QuickStart/
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=Gerrit_QuickStart/src/tmp
+mainTexFile=gerrit.tex
+outputFile=Gerrit_QuickStart.pdf
+langSpell=en
+markDer=true
+srcDir=Gerrit_QuickStart/src/
