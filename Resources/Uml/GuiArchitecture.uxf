@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1044</x>
+      <y>414</y>
+      <w>186</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Screen
+--
++ Screen(pNewApplication: Application*): void
++ Add(oChild: Drawable&amp;): void
++ Draw(): void
++ Draw(rectangle: Rectangle): void
+--
+- screenContainer: Container
+- pApplication: Application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>108</y>
+      <w>144</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Drawable
+--
++ SetX(x: uint16_t): void
++ SetY(y: uint16_t): void
++ SetWidth(width: uint16_t): void
++ SetHeight(height: uint16_t): void
++ GetX(): uint16_t
++ GetY(): uint16_t
++ GetWidth(): uint16_t
++ GetHeight(): uint16_t
++ GetAbsoluteX(): uint16_t
++ GetAbsoluteY(): uint16_t
++ Refresh(): void
+/+ Draw(rect: Rectangle&amp;): void/
+
+--
+- pParent: Drawable*
+- pSibling: Drawable*
+- rectangle: Rectangle
+# eDrawableType: DrawabeType_e
+- bIsVisible: bool
+- bIsTouchable: bool
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>564</x>
+      <y>216</y>
+      <w>102</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;struct&gt;&gt;
+Rectangle
+--
+--
++ x: uint16_t
++ y: uint16_t
++ width: uint16_t
++ height: uint16_t
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>258</y>
+      <w>96</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>546</x>
+      <y>438</y>
+      <w>90</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>624</x>
+      <y>414</y>
+      <w>192</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Image
+--
++ Draw(rect: Rectangle&amp;): void
++ SetBitmap(eNewBitmapId: BitmapId_e): void
++ GetBitmapId(): void
++ GetBitmapWidth(): uint16_t
++ GetBitmapHeight(): uint16_t
+--
+-eBitmapId: BitmapId_e</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>438</x>
+      <y>414</y>
+      <w>114</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt; 
+BitmapId_e
+--
+deBitmapId_Invalid = 0
+...
+...
+deBitmapId_NumOf
+
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>438</x>
+      <y>510</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Note..
+BitmapId enumerator 
+and BitmapDatabase
+generated from Bitmaps
+by BitmapDatabaseGenerator
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>492</x>
+      <y>474</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>858</x>
+      <y>414</y>
+      <w>144</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Container
+--
++ Add(oChild: Drawable&amp;): void
+--
+- pFirstChild: Drawable*
+- pLastChild: Drawable*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>714</x>
+      <y>312</y>
+      <w>72</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>852</x>
+      <y>312</y>
+      <w>78</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>564</x>
+      <y>108</y>
+      <w>114</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt; 
+Type_e
+--
+deType_Drawable = 0
+deType_Container
+deType_Image
+deType_NumOf
+
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>996</x>
+      <y>444</y>
+      <w>60</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>144</y>
+      <w>84</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1032</x>
+      <y>624</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>UserScreen
+--
++ UserScreen(pNewApplication: Application*): void
+... Methods
+--
+... objects
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1134</x>
+      <y>486</y>
+      <w>18</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1308</x>
+      <y>414</y>
+      <w>168</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Application
+--
++ ChangeScreenTo(pNewScreen: Screen*): void
++ Refresh(): void
+--
+- pFrameBuffer: uint8_t</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>222</x>
+      <y>606</y>
+      <w>120</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;struct&gt;&gt; 
+Bitmap_t
+--
+--
++ width: uint16_t
++ height: uint16_t
++ address: uint16_t
++ pixelFormat: PixelFormat_e </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>606</y>
+      <w>258</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>BitmapDatabase
+--
++ GetBitmapWidth(eBitmapId: BitmapId_e): uint16_t
++ GetBitmapWidth(eBitmapId: BitmapId_e): uint16_t
++ GetBitmapAddress(eBitmapId: BitmapId_e): uint32_t
++ GetBitmapPixelFormat(eBitmapId: BitmapId_e): PixelFormat_e</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>54</x>
+      <y>606</y>
+      <w>108</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt; 
+PixelFormat_e
+--
+dePixelFormat_RGB888, 
+dePixelFormat_BGR888,
+dePixelFormat_RGB565,
+dePixelFormat_BGR565,
+dePixelFormat_RGB444,
+dePixelFormat_BGR444,
+dePixelFormat_RGB332,
+dePixelFormat_BGR233,
+dePixelFormat_NumOf
+
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>156</x>
+      <y>642</y>
+      <w>78</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>498</y>
+      <w>72</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+[call]</panel_attributes>
+    <additional_attributes>10.0;250.0;100.0;250.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>642</y>
+      <w>90</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>492</x>
+      <y>564</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1314</x>
+      <y>624</y>
+      <w>144</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>UserApplication
+--
+
+--
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1386</x>
+      <y>462</y>
+      <w>18</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>48</x>
+      <y>72</y>
+      <w>342</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>fontsize=30
+Legend: 
+
+grey - note
+orange - enumerator
+yellow - user implementation/object
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
