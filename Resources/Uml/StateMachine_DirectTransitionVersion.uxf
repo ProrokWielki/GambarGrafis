@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>7</zoom_level>
+  <zoom_level>12</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>462</x>
-      <y>126</y>
-      <w>210</w>
-      <h>154</h>
+      <x>672</x>
+      <y>96</y>
+      <w>360</w>
+      <h>264</h>
     </coordinates>
     <panel_attributes>StateMachine
 --
@@ -29,10 +29,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>140</x>
-      <y>126</y>
-      <w>196</w>
-      <h>91</h>
+      <x>120</x>
+      <y>96</y>
+      <w>336</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>State
 --
@@ -47,10 +47,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>140</x>
-      <y>504</y>
-      <w>203</w>
-      <h>84</h>
+      <x>120</x>
+      <y>744</y>
+      <w>348</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>StateX
 --
@@ -66,10 +66,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>329</x>
+      <x>444</x>
       <y>168</y>
-      <w>147</w>
-      <h>28</h>
+      <w>252</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 [call]</panel_attributes>
@@ -78,10 +78,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>182</x>
-      <y>210</y>
-      <w>21</w>
-      <h>308</h>
+      <x>192</x>
+      <y>240</y>
+      <w>36</w>
+      <h>528</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;420.0</additional_attributes>
@@ -89,10 +89,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>224</x>
-      <y>385</y>
-      <w>203</w>
-      <h>84</h>
+      <x>264</x>
+      <y>540</y>
+      <w>348</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>StateY
 --
@@ -108,10 +108,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>294</x>
-      <y>210</y>
-      <w>21</w>
-      <h>189</h>
+      <x>384</x>
+      <y>240</y>
+      <w>36</w>
+      <h>324</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;250.0</additional_attributes>
